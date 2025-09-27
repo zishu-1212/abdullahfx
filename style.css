@@ -1,0 +1,666 @@
+body {
+  background: #fff;
+  font-family: Arial, sans-serif;
+  /* overflow-x: hidden; */
+}
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+.btn-danger{
+  background-color: #800000;
+}
+.nav-link.active {
+    color: #c80d0c !important;
+    font-weight: bold;
+}
+        .navbar-brand {
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+        .nav-item {
+            margin-right: 15px;
+        }
+        .register-btn {
+            background-color: #c80d0c;
+            color: white;
+            border-radius: 5px;
+            padding: 8px 20px;
+        }
+        .contact-number {
+            color: #000;
+            font-weight: bold;
+            margin-left: 15px;
+        }
+        .navbar{
+            background-color: #ffffff;
+        }
+        .add-banner-image {
+            height: 700px; /* ya jitni aapko height chahiye */
+            background-image: url('image/banner.png'); /* image ka path yahan dein */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            border-radius: 10px; /* optional rounded corners */
+        }
+        .banner-right-section{
+            margin-top: 200px;
+        }
+    .highlight-box {
+      background-color: #d51f1f;
+      color: #fff;
+      padding: 0 8px;
+      display: inline-block;
+    }
+    .custom-btn {
+      background-color: #d51f1f;
+      color: white;
+      padding: 12px 30px;
+      border-radius: 30px;
+      font-weight: 500;
+      font-size: 16px;
+      border: none;
+      transition: all 0.3s ease;
+      text-decoration: none;
+    }
+    .custom-btn:hover {
+      background-color: #bb1b1b;
+    }
+    .mobile-img {
+      max-width: 100%;
+      height: auto;
+      /* transform: rotate(-5deg); */
+    }
+    .green-text {
+      color: #1bb14f;
+      font-weight: 700;
+    }
+    .navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #ffffff;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+.social-section {
+  background-image: url('image/second-banner.png');
+  background-size: cover;
+  background-position: center;
+  padding: 60px 0;
+  color: #fff;
+}
+
+
+
+.follow-badge {
+  background: linear-gradient(45deg, #f58529, #dd2a7b, #8134af);
+  color: white;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 15px;
+  border-radius: 25px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.follow-badge img {
+  height: 25px;
+}
+
+.insta-footer span {
+  font-weight: 600;
+  color: #333;
+}
+
+.youtube-card .video-thumbnail img {
+  width: 100%;
+  max-width: 100%;
+  border: 2px solid #f00;
+}
+
+.subscribe-btn {
+  background-color: red;
+  color: white;
+  font-weight: bold;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  margin-top: 10px;
+  position: relative;
+  cursor: pointer;
+}
+
+.subscribe-btn .hand {
+  margin-left: 10px;
+}
+ .services-section {
+    text-align: center;
+    padding: 50px 20px;
+    background: url('image/3rd-banner.png') no-repeat center center/cover;
+    color: #fff;
+    position: relative;
+    }
+
+    .services-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* dark overlay */
+    z-index: 1;
+    }
+
+    .services-section > * {
+    position: relative;
+    z-index: 2; /* content overlay ke upar dikhe */
+    }
+
+    .services-section h2 {
+      font-weight: bold;
+      font-size: 2rem;
+      margin-bottom: 40px;
+    }
+    .service-box {
+      background: #000;
+      border: 1px solid #444;
+      padding: 30px 20px;
+      border-radius: 10px;
+      transition: 0.3s;
+    }
+    .service-box:hover {
+      border-color: #ff1c1c;
+      box-shadow: 0 0 20px #ff1c1c;
+    }
+    .service-box img {
+      width: 80px;
+      margin-bottom: 20px;
+      filter: drop-shadow(0 0 8px #ff1c1c);
+    }
+    .service-box h5 {
+      font-size: 1.1rem;
+      text-transform: uppercase;
+    }
+    .btn-custom {
+      background: linear-gradient(to right, #e62e2e, #b81b1b);
+      color: #fff;
+      border: none;
+      padding: 12px 30px;
+      font-weight: bold;
+      border-radius: 50px;
+      text-transform: uppercase;
+      margin-top: 30px;
+      transition: 0.3s;
+    }
+    .btn-custom:hover {
+      background: #ff1c1c;
+      box-shadow: 0 0 15px #ff1c1c;
+    }
+    .contact-section {
+      text-align: center;
+      padding: 40px 20px;
+      background: url('image/4th-banner.png') no-repeat center center/cover;
+      position: relative;
+      height: 500px;
+    }
+    .contact-section::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      /* background: rgba(0, 0, 0, 0.5); */
+      z-index: 1;
+    }
+    .contact-section > * {
+      position: relative;
+      z-index: 2;
+    }
+    .main-icons {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 40px;
+    }
+    .main-icons .icon-box {
+      flex: 1;
+      text-align: center;
+      position: relative;
+    }
+    .main-icons img {
+      width: 80px;
+      height: 80px;
+    }
+    .main-icons span {
+      display: block;
+      margin-top: 10px;
+      writing-mode: vertical-rl;
+      transform: rotate(180deg);
+      font-weight: bold;
+      font-size: 14px;
+    }
+    .middle-text {
+      font-size: 1.8rem;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+    .social-icons {
+      margin-top: 120px;
+      
+    }
+    .social-icons .icon-card {
+      /* width: 150px; */
+      padding: 10px;
+      border-radius: 10px;
+      text-align: center;
+      background: #111;
+      transition: 0.3s;
+    }
+    .social-icons .icon-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 15px #ff1c1c;
+    }
+    .social-icons img {
+      width: 150px;
+      margin-bottom: 10px;
+    }
+    .social-icons h5 {
+      font-size: 1rem;
+      font-weight: bold;
+      margin: 0;
+    }
+    .tele{
+        width: 100px !important;
+        height: 100px !important;
+        margin-right: 120px;
+    }
+    .whatsapp{
+        width: 100px !important;
+        height: 100px !important;
+        margin-left: 100px;
+    }
+    .main-icons .icon-box{
+        cursor: pointer;
+    }
+    .social-icons .icon-card{
+        cursor: pointer;
+    }
+    
+
+    .why-trade-section {
+      text-align: center;
+      padding: 50px 20px;
+      background: url('image/award-banner.png') no-repeat center center/cover;
+      position: relative;
+    }
+
+    .why-trade-section::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(255, 255, 255, 0.7);
+      z-index: 1;
+    }
+
+    .why-trade-section > * {
+      position: relative;
+      z-index: 2;
+    }
+
+    .why-trade-section h2 {
+      font-weight: bold;
+      font-size: 2rem;
+      color: #a00;
+      text-transform: uppercase;
+      margin-bottom: 40px;
+    }
+
+    .award-card {
+      background: #fff;
+      padding: 15px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      transition: 0.3s;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      height: 300px ;
+    }
+
+    .award-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .award-card img {
+      max-width: 100%;
+      height: 150px;
+      object-fit: contain;
+      margin-bottom: 10px;
+    }
+
+    .award-card h5 {
+      font-size: 1rem;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .award-card p {
+      font-size: 0.9rem;
+      color: #555;
+      margin: 0;
+    }
+
+    .btn-custom {
+      background: linear-gradient(to right, #e62e2e, #b81b1b);
+      color: #fff;
+      border: none;
+      padding: 12px 30px;
+      font-weight: bold;
+      border-radius: 50px;
+      text-transform: uppercase;
+      margin-top: 30px;
+      transition: 0.3s;
+    }
+
+    .btn-custom:hover {
+      background: #ff1c1c;
+      box-shadow: 0 0 10px #ff1c1c;
+    }
+    .our-tour-package{
+    text-align: center;
+      padding: 40px 20px;
+      background: url('image/5th-banner.png') no-repeat center center/cover;
+      position: relative;
+      height: 700px;
+    }
+    .testimonial-card {
+      border-radius: 8px;
+      padding: 20px;
+      color: white;
+      min-height: 300px;
+    }
+    .testimonial-title {
+      font-weight: bold;
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+    }
+    .testimonial-stars {
+      color: #FFD700;
+      margin-bottom: 10px;
+    }
+    .testimonial-text {
+      font-size: 0.95rem;
+      line-height: 1.6;
+    }
+    .bg-red { background: #B60000; }
+    .bg-dark-grey { background: #595959; }
+    .social-section-footer {
+      background: #800000; /* Dark Red Background */
+      padding: 40px;
+    }
+    .social-card-footer {
+      background: white;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .social-card-footer img.profile-img {
+      width: 80px;
+      height: 80px;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+    .social-links-footer {
+      display: flex;
+      /* gap: 40px; */
+      align-items: center;
+    }
+    .social-links-footer a {
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+      font-size: 1.1rem;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .social-links-footer a i {
+      font-size: 1.5rem;
+    }
+    .fa-youtube { color: #FF0000; }
+    .fa-whatsapp { color: #25D366; }
+    .fa-instagram { 
+      background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .nav-link.active {
+    color: #c80d0c !important;
+    font-weight: bold;
+    position: relative;
+}
+.nav-link.active::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #c80d0c;
+}
+@media only screen and (max-width: 600px) {
+.custom-section .container{
+  margin-top: 50px;
+}
+.sub-button img{
+ width: 150px; 
+}
+.service-box h5{
+  font-size: 10px;
+}
+.social-icons img {
+  width: 50px;
+}
+.why-trade-section .award-card h5{
+  font-size: 10px;
+}
+.why-trade-section .award-card p{
+  font-size: 10px;
+}
+.why-trade-section .award-card img{
+  width: 100px;
+}
+.why-trade-section .award-card{
+  height: 250px;
+}
+
+.why-trade-section .col-6{
+  margin-top: 15px;
+}
+.our-tour-package{
+  height: 230px;
+}
+.contact-section {
+  height: 270px;
+}
+.social-icons{
+  margin-top: 0px;
+}
+.main-icons .icon-box img{
+  width: 50px !important;
+  height: 50px !important;
+}
+.main-icons{
+  margin-bottom: 70px;
+}
+.tele{
+  width: 50px !important;
+  height: 50px !important;
+  margin-left: -50px;
+  margin-top: -30px;
+}
+.whatsapp{
+  width: 50px !important;
+  height: 50px !important;
+  margin-left: 160px;
+  margin-top: -15px;
+}
+.social-links-footer{
+  padding-left: 20px;
+}
+.social-section {
+ height: 400px;
+ padding: 0px;
+}
+.social-section img{
+  width: 170px;
+}
+.youtube-card h4{
+  font-size: 15px;
+}
+.youtube-card p{
+  /* display: none; */
+  font-size: 10px;
+}
+.service-box img{
+  width: 50px;
+}
+
+.youtube-card img{
+  width: 100px;
+  height: auto !important;
+  margin-top: 10px;
+}
+.social-icons .icon-card img{
+  width: 70px;
+}
+.social-icons .icon-card{
+  padding: 0px;
+}
+.social-icons{
+  margin-top: 70px;
+}
+}
+.fixed-bottom .btn {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.insta-iframe {
+  position: absolute;
+  top: 11%;
+  left: 8%;
+  width: 84%;
+  height: 78%;
+  overflow: hidden;
+}
+
+.insta-iframe > div {
+  width: 100%;
+  height: 100%;
+  transform: scale(0.85);
+  transform-origin: top left;
+}
+@keyframes pulse {
+      0% {
+        opacity: 0.2;
+        transform: scaleY(1);
+      }
+      50% {
+        opacity: 1;
+        transform: scaleY(1.2);
+      }
+      100% {
+        opacity: 0.2;
+        transform: scaleY(1);
+      }
+    }
+
+    .signal-button {
+      padding: 10px 16px;
+      font-size: 16px;
+      background: #1c1c1c;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      font-family: sans-serif;
+      cursor: pointer;
+    }
+
+    .signal-icon {
+      display: inline-block;
+      width: 24px;
+      height: 24px;
+      position: relative;
+    }
+
+    .signal-bar {
+      position: absolute;
+      bottom: 0;
+      width: 4px;
+      border-radius: 2px;
+      background-color: #00ff6e;
+      animation: pulse 1.4s infinite ease-in-out;
+      transform-origin: bottom;
+    }
+
+    .signal-bar:nth-child(1) {
+      left: 0px;
+      height: 6px;
+      animation-delay: 0s;
+    }
+
+    .signal-bar:nth-child(2) {
+      left: 8px;
+      height: 12px;
+      animation-delay: 0.2s;
+    }
+
+    .signal-bar:nth-child(3) {
+      left: 16px;
+      height: 18px;
+      animation-delay: 0.4s;
+    }
+ @keyframes glow {
+      0% {
+        box-shadow: 0 0 0px #B60000;
+      }
+      50% {
+        box-shadow: 0 0 12px #B60000;
+      }
+      100% {
+        box-shadow: 0 0 0px #B60000;
+      }
+    }
+
+    .get-course-button {
+      padding: 14px 28px;
+      display: inline-flex;
+      gap: 12px;
+      cursor: pointer;
+      transition: background 0.3s ease, transform 0.2s ease;
+    }
+
+    .book-icon {
+      width: 26px;
+      height: 26px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      animation: glow 1.5s infinite;
+    }
+
+    .book-icon svg {
+      fill: #B60000;
+    }

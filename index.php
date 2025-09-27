@@ -1,0 +1,481 @@
+<?php
+// Get the user's IP address
+$ip = $_SERVER['REMOTE_ADDR'];
+
+// Call IP geolocation API
+$apiURL = "http://ip-api.com/json/{$ip}?fields=status,country";
+$response = file_get_contents($apiURL);
+$data = json_decode($response, true);
+
+// Check if the API returned a valid response
+if ($data && $data['status'] === 'success') {
+    $country = strtolower($data['country']);
+
+    // If country is Malaysia
+    if ($country === '123') {
+        // Generate a random number between 0 and 1
+        $random = mt_rand(0, 1); // 0 or 1
+
+        // Decide redirect URL based on random number
+        if ($random === 0) {
+            $destination = "https://wa.me/447883016094?text=Apki%20Services%20kya%20kya%20hain?";
+        } else {
+            $destination = "https://wa.me/447397826524?text=Signals%20group%20add%20hona%20hai";
+        }
+
+        // Output JavaScript to redirect after 4 seconds
+        echo '<script>
+                setTimeout(function(){
+                    window.location.href = "' . $destination . '";
+                }, 4000);
+              </script>';
+    }
+}
+?>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abdullah FX - Forex Training & Analysis in Pakistan</title>
+    <link rel="icon" href="image/logo.png" type="image/png">
+    <link rel="apple-touch-icon" href="image/logo.png">
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <meta property="og:image" content="image/logo.png">
+    <meta name="twitter:image" content="image/logo.png">
+    
+    <!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '770007349305380');
+fbq('track', 'PageView');
+</script>
+
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=770007349305380&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+    
+</head>
+<body>
+  <!-- Fixed Bottom Button (Mobile Only) -->
+<div class="fixed-bottom d-block d-lg-none">
+    <div class="text-center p-3 pb-2">
+        <div class="row">
+          <div class="col-6">
+            <a href="https://whatsapp.com/channel/0029VaeFLqa1dAw2xe97SO0Q" class="btn btn-danger fw-bold p-3 w-100">
+                Get Signals 
+    <span class="signal-icon">
+      <span class="signal-bar"></span>
+      <span class="signal-bar"></span>
+      <span class="signal-bar"></span>
+    </span>
+            </a>
+          </div>
+          <div class="col-6">
+            <a href="https://whatsapp.com/channel/0029VaeFLqa1dAw2xe97SO0Q" class="btn btn-success fw-bold p-3 w-100 get-course-button d-flex justify-content-center">
+                Get Course
+                <span class="book-icon">
+      <!-- SVG Book Icon -->
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <path d="M6 4v16c0 .55.45 1 1 1h12v-2H8V5h11V3H7c-.55 0-1 .45-1 1zm3 1h10v14H9V5z"/>
+      </svg>
+    </span>
+            </a>
+          </div>
+        </div>
+    </div>
+</div>
+    <nav class="navbar navbar-expand-lg">
+    <div class="container">
+        <a class="navbar-brand" onclick="scrollToSection('home')"><img src="image/logo.png" width="50"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <button class="nav-link" onclick="scrollToSection('home')">Home</button>
+                </li>
+                <li class="nav-item">
+                    <button class="nav-link" onclick="scrollToSection('services')">Services</button>
+                </li>
+                <li class="nav-item">
+                    <button class="nav-link" onclick="scrollToSection('social-media')">Social Media</button>
+                </li>
+                <li class="nav-item">
+                    <button class="nav-link" onclick="scrollToSection('promo')">Promo</button>
+                </li>
+                <li class="nav-item">
+                    <button class="nav-link" onclick="scrollToSection('testimonials')">Testimonials</button>
+                </li>
+            </ul>
+            <div class="d-flex align-items-center ms-3">
+                <a href="https://wa.me/447883016094" class="nav-link"><span class="contact-number"><i class="fab fa-whatsapp"></i> +447883016094</span></a>
+                <!-- <a href="https://my.dooprime.com/links/go/49612" class="register-btn nav-link ms-3">Register</a> -->
+            </div>
+        </div>
+    </div>
+</nav>
+<section class="custom-section pt-5 " id="home">
+  <div class="container ">
+    <div class="row align-items-center">
+      
+      <!-- Left Text -->
+      <div class="col-md-6 ps-5">
+        <h2 class="fw-bold" style="font-size: 36px;">
+          CHECK OUR REVIEWS <span class="highlight-box">FIRST</span><br>
+          THEN TAKE DECISION!
+        </h2>
+
+        <ul class="mt-4" style="list-style: none; padding-left: 0; font-size: 17px; color: #333;">
+          <li class="mb-2">• <span style="font-weight: 600;">Guaranteed <span style="font-weight: 700;">Results</span> from Signals.</span></li>
+          <li class="mb-2">• <span style="font-weight: 600;">Target: <span class="green-text">4,200+ Green PIPS.</span></span></li>
+          <li>• <span style="font-weight: 600;">My Personal Trading <span style="font-weight: 700;">Strategies</span>.</span></li>
+        </ul>
+
+        <a href="https://wa.me/447397826524" class="custom-btn mt-4">JOIN NOW →</a>
+      </div>
+
+      <!-- Right Image -->
+      <div class="col-md-6 text-center mt-4 mt-md-0">
+        <img src="image/mobile.png" alt="Mobile Screenshot" class="mobile-img">
+      </div>
+
+    </div>
+  </div>
+</section>
+    <section class="">
+  <div class="container social-section">
+    <div class="row align-items-center">
+      <!-- Instagram Card -->
+      <!-- <div class="col-6 text-center">
+        <div class="instagram-card">
+          <div class="insta-post">
+            <img src="image/insta-mobile.png" alt="Instagram Post" class="" />
+            <div class="insta-footer d-flex justify-content-around mt-3">
+            </div>
+          </div>
+        </div>
+      </div> -->
+      <!-- Instagram Card -->
+    <div class="col-6 text-center mt-3">
+      <div class="instagram-card position-relative d-inline-block" style="max-width: 300px;">
+        <!-- Mobile Frame Image -->
+        <img src="image/insta-mobile.png" alt="Instagram Frame" class="img-fluid" style="width: 100%;">
+
+        <!-- Instagram Post Embed (Absolutely positioned inside the mobile screen area) -->
+       <!-- Instagram Post Embed Wrapper -->
+      <div class="insta-iframe position-absolute" style="top: 11%; left: 8%; width: 84%; height: 78%; overflow: hidden;">
+        <div style="width: 100%; height: 100%; transform: scale(0.85); transform-origin: top left;">
+          <blockquote class="instagram-media"
+            data-instgrm-permalink="https://www.instagram.com/p/DKNHMXLN-_2/?utm_source=ig_embed&amp;utm_campaign=loading"
+            data-instgrm-version="14"
+            style="margin: 0 auto;">
+          </blockquote>
+        </div>
+      </div>
+<script async src="//www.instagram.com/embed.js"></script>
+
+      </div>
+    </div>
+
+
+      <!-- YouTube Card -->
+      <div class="col-6 text-center text-md-start pe-5">
+        <div class="youtube-card">
+          <div class="d-flex justify-content-center align-items-center mb-2">
+            <img src="image/yt-icon.png" alt="YouTube" style="height: 50px; margin-right: 10px;" />
+          </div>
+          <div class="video-thumbnail mb-3">
+            <div class="ratio ratio-16x9">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/zvNX0QAi0F8?si=z5UezIDLmsa3oO0D" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            </div>
+
+          <h4 class="text-white fw-bold">One Candle Can Change Your Life</h4>
+          <p class="text-light small">
+            Mr. Abdullah shared his insights based on personal experience and developed strategies, and while he
+            provides analysis and trading signals, these should not be taken as a guarantee of profit.
+          </p>
+          <div class="d-flex justify-content-center w-100">
+              <a href="https://www.youtube.com/@AbdullaahFx?sub_confirmation=1" target="_blank" class="sub-button">
+                <img src="image/subs.png" width="300">
+              </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+  <section class="services-section container" id="services">
+    <h2>OUR TOP SERVICES</h2>
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-4">
+          <div class="service-box">
+            <img src="image/free-forex-training.png" alt="Free Forex Training">
+            <h5>FREE FOREX TRAINING</h5>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="service-box">
+            <img src="image/free-forex-signals.png" alt="Free Forex Signals">
+            <h5>FREE FOREX SIGNALS</h5>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="service-box">
+            <img src="image/free-forex-analysis.png" alt="Free Forex Analysis">
+            <h5>FREE FOREX ANALYSIS</h5>
+          </div>
+        </div>
+      </div>
+      <a href="https://whatsapp.com/channel/0029VaeFLqa1dAw2xe97SO0Q" class="btn btn-custom mt-4">Get Services →</a>
+    </div>
+  </section>
+<section class="contact-section container" id="social-media">
+  <div class="container">
+
+ 
+    <div class="row">
+      <div class="col-6 p-0" onclick="window.location.href='http://t.me/@Abdullaah_ck'">
+        <img src="image/tele.png" alt="Telegram" class="tele">
+      </div>
+      <div class="col-6 p-0" onclick="window.location.href='https://wa.me/447883016094">
+        <img src="image/whastapp.png" alt="WhatsApp" class="whatsapp">
+      </div>
+    </div>
+
+    <!-- Social Media Icons -->
+    <div class="social-icons row d-flex justify-content-center">
+      <div class="col-3 col-md-2">
+        <div class="icon-card" onclick="window.location.href='https://www.instagram.com/abdullahfx110/'">
+          <img src="image/insta.png" alt="Instagram">
+        </div>
+      </div>
+      <div class="col-3 col-md-2">
+        <div class="icon-card" onclick="window.location.href='https://www.facebook.com/people/Abdullah-Premium/61577324619760/'">
+          <img src="image/face.png" alt="Facebook">
+        </div>
+      </div>
+      <div class="col-3 col-md-2">
+        <div class="icon-card" onclick="window.location.href='https://www.youtube.com/@AbdullaahFx'">
+          <img src="image/you.png" alt="YouTube">
+        </div>
+      </div>
+      <div class="col-3 col-md-2">
+        <div class="icon-card" onclick="window.location.href='https://www.tiktok.com/@abdullah_fxo.1'">
+          <img src="image/tik.png" alt="Tiktok">
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+  <section class="why-trade-section">
+    <div class="container" style="display:none;">
+      <h2>WHY I TRADE WITH DOO PRIME?</h2>
+      <div class="row d-flex justify-content-center">
+        <div class="col-md-2 col-6">
+          <div class="award-card">
+            <img src="image/award-1.png" alt="Award 1">
+            <h5>Best Trading Experience Broker 2025</h5>
+            <p>FXDailyInfo</p>
+          </div>
+        </div>
+        <div class="col-md-2 col-6">
+          <div class="award-card">
+            <img src="image/award-2.png" alt="Award 2">
+            <h5>Best Partners Programme 2025</h5>
+            <p>FXDailyInfo</p>
+          </div>
+        </div>
+        <div class="col-md-2 col-6">
+          <div class="award-card">
+            <img src="image/award-3.png" alt="Award 3">
+            <h5>Best Price Execution</h5>
+            <p>2024 BrokersView Awards</p>
+          </div>
+        </div>
+        <div class="col-md-2 col-6">
+          <div class="award-card">
+            <img src="image/award-4.png" alt="Award 4">
+            <h5>Most reliable Forex Broker</h5>
+            <p>FXDailyInfo Forex Brokers Award Results 2024</p>
+          </div>
+        </div>
+        <div class="col-md-2 col-6">
+          <div class="award-card">
+            <img src="image/award-5.png" alt="Award 5">
+            <h5>Best Trading Speed</h5>
+            <p>2024 BrokersView Awards</p>
+          </div>
+        </div>
+      </div>
+      <a href="https://my.dooprime.com/links/go/49612" class="btn btn-custom">Start Trading Today!</a>
+    </div>
+  </section>
+  <section id="promo">
+    <div class="container our-tour-package">
+    </div>
+  </section>
+<section class="container py-5 text-center" id="testimonials">
+  <h2 class="fw-bold mb-5">TESTIMONIALS</h2>
+  <div class="row g-4">
+    
+    <!-- Akmal Saeed -->
+    <div class="col-md-4" onclick="window.location.href='https://www.instagram.com/s/aGlnaGxpZ2h0OjE4MDkyOTgzMzM5NTU5NzU0?story_media_id=3597688093379639927_40036376037&igsh=eWl4d2U3d2JvaTA2'">
+      <div class="testimonial-card bg-red">
+        <div class="testimonial-title">AKMAL SAEED</div>
+        <div class="testimonial-stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+        <div class="testimonial-text">
+          After two years in the market, I’ve never felt more confident in my trading than I do now, thanks to Abdullah Sir. 
+          His advanced study on Fair Value, Rejected Orders SHAKEOUT, and Block Logic gave me practical insights I had never imagined. 
+          The risk–reward clarity and precision I’ve gained is truly a game-changer.
+        </div>
+      </div>
+    </div>
+    
+    <!-- Safiullah -->
+    <div class="col-md-4" onclick="window.location.href='https://www.instagram.com/s/aGlnaGxpZ2h0OjE4MDk5MzYyNjAyNDY0NDUx?story_media_id=3599952690224302478_40036376037&igsh=MW9yYW4xMTZ0bXQzag=='">
+      <div class="testimonial-card bg-danger">
+        <div class="testimonial-title">SAFIULLAH</div>
+        <div class="testimonial-stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+        <div class="testimonial-text">
+          Abdullah Sir’s YouTube analysis, chart sharing, and daily trading signals are top-notch. The risk is always well-managed — 
+          with a maximum stop loss of just 20 points — and I’ve personally experienced trades with a 1:20 reward ratio. 
+          His risk-to-reward strategy is truly outstanding.
+        </div>
+      </div>
+    </div>
+    
+    <!-- Muhammad Umar -->
+    <div class="col-md-4" onclick="window.location.href='https://www.instagram.com/s/aGlnaGxpZ2h0OjE4MDkyOTgzMzM5NTU5NzU0?story_media_id=3597688093379639927_40036376037&igsh=eWl4d2U3d2JvaTA2'">
+      <div class="testimonial-card bg-dark-grey">
+        <div class="testimonial-title">MUHAMMAD UMAR</div>
+        <div class="testimonial-stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+        <div class="testimonial-text">
+          Abdullah Premium is not just a community — it’s a family. 
+          The members here aren’t just learners; they are pro players with a professional mindset. 
+          The level of support, the depth of studies, the constant guidance from Abdullah Sir and his team — it’s unmatched.
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</section>
+<section class="social-section-footer container">
+    <div class="social-card-footer">
+      <!-- Profile Image -->
+      <img src="image/logo.png" alt="Profile" class="profile-img">
+
+      <!-- Links -->
+      <div class="social-links-footer row">
+        <div class="col-auto">
+          <a href="https://www.youtube.com/@AbdullaahFx"><i class="fab fa-youtube"></i> YouTube</a>
+        </div>
+        <div class="col-auto">
+          <a href="https://wa.me/447397826524"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+        </div>
+        <div class="col-auto">
+          <a href="https://www.instagram.com/abdullahfx110"><i class="fab fa-instagram"></i> Instagram</a>
+        </div>
+      </div>
+  </div>
+</section>
+    <script src="bootstrap.bundle.min.js"></script>
+    <center><p>Copyright © 2025. All rights reserved. <a href="privacy.html">Privacy Policy</a>.</p></center>
+</body>
+</html>
+<script>
+// Smooth scroll function for buttons
+function scrollToSection(sectionId) {
+    const section = document.getElementById(sectionId);
+    if (section) {
+        const navbarHeight = document.querySelector('.navbar').offsetHeight;
+        const targetPosition = section.offsetTop - navbarHeight;
+        
+        window.scrollTo({
+            top: targetPosition,
+            behavior: 'smooth'
+        });
+        
+        // Update active class after scrolling
+        setTimeout(() => {
+            updateActiveNav();
+        }, 500);
+    }
+}
+
+// Update active nav link based on scroll position
+function updateActiveNav() {
+    const sections = document.querySelectorAll('section');
+    const navLinks = document.querySelectorAll('.nav-link');
+    const scrollPosition = window.scrollY + document.querySelector('.navbar').offsetHeight;
+    
+    sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.offsetHeight;
+        const sectionId = section.getAttribute('id');
+        
+        if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('onclick')?.includes(sectionId) || 
+                    link.getAttribute('href') === `#${sectionId}`) {
+                    link.classList.add('active');
+                }
+            });
+        }
+    });
+}
+
+// Initialize active nav on page load
+document.addEventListener('DOMContentLoaded', function() {
+    updateActiveNav();
+    
+    // For regular anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href');
+            scrollToSection(targetId.replace('#', ''));
+        });
+    });
+    
+    // For scroll events
+    window.addEventListener('scroll', function() {
+        updateActiveNav();
+    });
+});
+</script>
