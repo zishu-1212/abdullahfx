@@ -15,7 +15,7 @@ html, body {
   padding-top: 10%;
 }
 .carousel-inner img {
-  height:70vh ;
+  height:30vh ;
   transition: transform 0.8s ease-in-out;
 }
 
@@ -715,6 +715,7 @@ html, body {
     height: 2px;
     background-color: #c80d0c;
 }
+
 @media only screen and (max-width: 600px) {
 .custom-section .container{
   margin-top: 50px;
