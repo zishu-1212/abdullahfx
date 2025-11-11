@@ -15,7 +15,7 @@ html, body {
   padding-top: 10%;
 }
 .carousel-inner img {
-  height:30vh ;
+  height:100% ;
   transition: transform 0.8s ease-in-out;
 }
 
@@ -94,7 +94,7 @@ html, body {
 /* Floating Title Glow Animation */
 .animated-title {
   font-size: 36px;
-  color: #989898;
+  color: #b90707;
   animation: floatTitle 6s ease-in-out infinite, fadeUp 1s ease forwards;
   position: relative;
 }
