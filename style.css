@@ -1,7 +1,7 @@
 body {
   background: #fff;
-  font-family: Arial, sans-serif;
-  /* overflow-x: hidden; */
+font-family: "Winky Sans", sans-serif;
+
 }
 html, body {
     max-width: 100%;
@@ -15,8 +15,7 @@ html, body {
   padding-top: 10%;
 }
 .carousel-inner img {
-  object-fit: cover;
-  height: 400px;
+  height:70vh ;
   transition: transform 0.8s ease-in-out;
 }
 
@@ -76,13 +75,13 @@ html, body {
         }
   /* Animated Gradient Text for Highlight Word */
 .highlight-box {
-  background: linear-gradient(270deg, #ff0055, #ffcc00, #0246c1, #ff0055);
+  background: linear-gradient(270deg, #00d5ff, #0062ff, #5e02c1, #ff6f00);
   background-size: 600% 600%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: gradientFlow 6s ease infinite;
   font-weight: 800;
-  text-shadow: 0 0 15px rgba(255, 255, 255, 0.203);
+  text-shadow: 0 0 25px rgba(255, 255, 255, 0.203);
 }
 
 /* Infinite gradient movement */
@@ -95,7 +94,7 @@ html, body {
 /* Floating Title Glow Animation */
 .animated-title {
   font-size: 36px;
-  color: #af1313;
+  color: #989898;
   animation: floatTitle 6s ease-in-out infinite, fadeUp 1s ease forwards;
   position: relative;
 }
@@ -360,6 +359,20 @@ html, body {
   justify-content: center;
 }
 
+
+.icon-wrap  {
+  animation: moveLeftRight 3s ease-in-out infinite;
+}
+
+/* Keyframes for smooth left-right motion */
+@keyframes moveLeftRight {
+  0%, 100% {
+    transform: translateX(-15px);
+  }
+  50% {
+    transform: translateX(15px); /* how far it moves right */
+  }
+}
 .icon-wrap img {
   width: 50px;
   filter: brightness(0) invert(1);
